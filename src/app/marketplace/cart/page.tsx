@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { List, Card, Button } from 'antd';
-import styles from './cart.module.css';
+import styles from '../martketplace.module.css';
 
 const CartOverview = () => {
   const cartItems = [

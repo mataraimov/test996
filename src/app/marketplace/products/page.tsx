@@ -2,7 +2,7 @@
 import React from 'react';
 import { List, Card, Button } from 'antd';
 import Link from 'next/link';
-import styles from './products.module.css';
+import styles from '../marketplace.module.css';
 
 const ProductListing = () => {
   const products = [
