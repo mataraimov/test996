@@ -37,13 +37,14 @@
 
 .content {
   padding: 24px 50px;
-  background-color: #f0f2f5;
+  /* background-color:floralwhite; */
 }
 
 .footer {
   text-align: center;
   padding: 20px 50px;
-  background-color: #f0f2f5;
+  color: #f0f1f2;
+  background-color: #498aed;
 }
 
 .footerLinks {

@@ -1,10 +1,10 @@
 'use client';
-
 import React from 'react';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css'; // Ensure your global styles are correctly imported
-import { Layout, Menu, Dropdown, Button, Input } from 'antd';
+import { Layout, Dropdown, Button, Input } from 'antd';
+import Menu from 'antd/es/menu';
+
 import {
   DownOutlined,
   UserOutlined,
@@ -111,6 +111,7 @@ const LayoutComponent = ({ children }: { children: React.ReactNode }) => {
           </Dropdown>
         </div>
       </Header>
+
       <Content className={styles.content}>{children}</Content>
       <Footer className={styles.footer}>
         <p>© 2024 996kg. Все права защищены.</p>
