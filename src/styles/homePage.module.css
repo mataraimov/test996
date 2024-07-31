@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 50px;
+}
+
+.logo img {
+  height: 40px;
+}
+.infoCard{
+  padding-top: 20px;
+  background: linear-gradient(90deg, rgb(171, 175, 248) 0px, rgb(176, 177, 245) 100%);
+  border-radius: 20px;
+}
+.citySelector {
+  display: flex;
+  align-items: center;
+}
+
+.cityDropdown {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchSection {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 60%;
+}
+
+.carousel img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.infoBlocks {
+  padding: 20px 50px;
+}
+.infoButton{
+  color: white;
+}
+.infoIcon {
+  font-size: 48px;
+  color: #f4f6f7;
+}
+
+.createAccountSection {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.recommendations,
+.findSeller,
+.servicesOverview {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 50px;
+  background-color: #f0f2f5;
+}
+
+.footerLinks {
+  margin-top: 10px;
+}
+
+.footerLinks a {
+  margin: 0 15px;
+}

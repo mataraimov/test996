@@ -1,0 +1,21 @@
+/* global.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.main-btn-primary:hover,
+.main-btn-primary:focus {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
