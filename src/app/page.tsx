@@ -5,7 +5,7 @@ import { PhoneOutlined, HomeOutlined, UserOutlined, GiftOutlined } from '@ant-de
 import Link from 'next/link';
 import styles from '../styles/homePage.module.css';
 import Card from 'antd/es/card';
-const { Header, Content, Footer } = Layout;
+const { Content } = Layout;
 
 const HomePage = () => {
   return (
@@ -16,24 +16,21 @@ const HomePage = () => {
             <Link href="/">Главная</Link>
           </Menu.Item>
           <Menu.Item key="business">
-            <Link href="/business/services">Бизнес</Link>
+            <Link href="/pro">Бизнес</Link>
           </Menu.Item>
           <Menu.Item key="personal">
-            <Link href="/personal/services">Личные услуги</Link>
-          </Menu.Item>
-          <Menu.Item key="marketplace">
             <Link href="/marketplace/products">Маркетплейс</Link>
           </Menu.Item>
           <Menu.Item key="escrow">
-            <Link href="/escrow/services">Эскроу</Link>
+            <Link href="/aboutus">О сервисе</Link>
           </Menu.Item>
         </Menu>
         <Carousel autoplay className={styles.carousel}>
           <div>
-            <img src="https://mtscdn.ru/upload/rk/7f1/952kh476_main.jpg" alt="Slide 1" />
+            <img src="https://mtscdn.ru/upload/rk/071/Desktop-952kh476.jpg" alt="Slide 1" />
           </div>
           <div>
-            <img src="https://mtscdn.ru/upload/rk/5b7/952kh476_main.jpg" alt="Slide 2" />
+            <img src="https://mtscdn.ru/upload/rk/071/Desktop-952kh476.jpg" alt="Slide 2" />
           </div>
           <div>
             <img src="https://mtscdn.ru/upload/rk/071/Desktop-952kh476.jpg" alt="Slide 3" />
@@ -49,7 +46,11 @@ const HomePage = () => {
                   cover={<HomeOutlined className="text-white text-4xl p-4" />}
                 >
                   <Card.Meta
-                    title={<span className="text-white">Бизнес</span>}
+                    title={
+                      <Link href="/pro" className="text-white">
+                        Бизнес
+                      </Link>
+                    }
                     description={<span className="text-white">Информация о бизнес услугах</span>}
                   />
                 </Card>
@@ -61,7 +62,11 @@ const HomePage = () => {
                   cover={<PhoneOutlined className="text-white text-4xl p-4" />}
                 >
                   <Card.Meta
-                    title={<span className="text-white">Номер</span>}
+                    title={
+                      <Link href="/profile" className="text-white">
+                        Номер
+                      </Link>
+                    }
                     description={<span className="text-white">Управление номерами</span>}
                   />
                 </Card>
@@ -73,7 +78,11 @@ const HomePage = () => {
                   cover={<UserOutlined className="text-white text-4xl p-4" />}
                 >
                   <Card.Meta
-                    title={<span className="text-white">Клиенты</span>}
+                    title={
+                      <Link href="/office" className="text-white">
+                        Клиенты
+                      </Link>
+                    }
                     description={<span className="text-white">Управление клиентами</span>}
                   />
                 </Card>
@@ -85,7 +94,11 @@ const HomePage = () => {
                   cover={<GiftOutlined className="text-white text-4xl p-4" />}
                 >
                   <Card.Meta
-                    title={<span className="text-white">Бонусы</span>}
+                    title={
+                      <Link href="/pro" className="text-white">
+                        Бонусы
+                      </Link>
+                    }
                     description={<span className="text-white">Бонусные программы</span>}
                   />
                 </Card>
@@ -95,10 +108,10 @@ const HomePage = () => {
         </div>
         <div className={styles.createAccountSection}>
           <Button className="mr-2" type="primary" size="large">
-            <Link href="/business/signup">Создать бизнес аккаунт</Link>
+            <Link href="/pro">Создать бизнес аккаунт</Link>
           </Button>
-          <Button type="default" size="large">
-            <Link href="/login">Вход в кабинет</Link>
+          <Button type="primary" size="large">
+            <Link href="/marketplace">Перейти в маркетплейс</Link>
           </Button>
         </div>
       </Content>

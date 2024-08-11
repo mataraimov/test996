@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Inter } from 'next/font/google';
-import './globals.css'; // Ensure your global styles are correctly imported
+import './globals.css';
 import { Layout, Dropdown, Button, Input } from 'antd';
 import Menu from 'antd/es/menu';
 
@@ -80,9 +80,9 @@ const LayoutComponent = ({ children }: { children: React.ReactNode }) => {
   return (
     <Layout>
       <Header className={styles.header}>
-        <div className={styles.logo}>
+        <Link href={'/'} className={styles.logo}>
           <img src="https://i.ibb.co/2MdV5BN/photo-2024-07-29-14-06-01.jpg" alt="996kg" />
-        </div>
+        </Link>
         <div className={styles.citySelector}>
           <Dropdown overlay={cityMenu} trigger={['click']} className={styles.dropdown}>
             <Button type="text" icon={<EnvironmentTwoTone />}>
@@ -112,12 +112,18 @@ const LayoutComponent = ({ children }: { children: React.ReactNode }) => {
         </div>
       </Header>
 
-      <Content className={styles.content}>{children}</Content>
+      <Content style={{ minHeight: '80vh' }} className={styles.content}>
+        {children}
+      </Content>
       <Footer className={styles.footer}>
         <p>© 2024 996kg. Все права защищены.</p>
         <div className={styles.footerLinks}>
           <Link href="/terms">Условия использования</Link>
-          <Link href="/privacy">Политика конфиденциальности</Link>
+          <Link href="/aboutus">О сервисе</Link>
+          <Link href="/faq">Вопросы и ответы</Link>
+          <Link href="/shipping">Доставка</Link>
+          <Link href="/pro">Бизнес аккаунт</Link>
+          <Link href="/office">Кабинет для бизнеса</Link>
         </div>
       </Footer>
     </Layout>
