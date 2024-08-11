@@ -1,4 +1,3 @@
-// common/Button.tsx
 import React from 'react';
 import { Button as AntButton } from 'antd';
 import { ButtonProps } from 'antd/lib/button';

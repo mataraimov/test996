@@ -3,7 +3,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-// import styles from './Product.module.css'; // Importing modular CSS for custom styles
 
 const ProductPage = () => {
   return (
